@@ -1,5 +1,11 @@
-import os
+"""Este programa indica un menu de seleccion donde de depende su seleccion este puede calcular una permutacion
+o bien determinar el subsidio de una familia dependiendo la cantidad de hijos que esta tiene"""
 
+import os
+#llamamos la libreria os para poder convertir variables a variables de entonrno#
+
+
+"""Mientras en ciclo while sea verdadero este se ejecutara"""
 while True:
     print("==============================================Menu==============================================")
     print("                            Seleccione la opcion que desea realizar:                             \n\n")
@@ -8,9 +14,10 @@ while True:
     print("3. Salir del programa\n")
 
     opcion = int(input("Selecciona la opcion que deseas realizar: "))
-
+    
+    
     if opcion == 1:
-        numfac = int(input("Ingresa el numero que desees saber su factorial: "))
+        numfac = int(input("Ingressa el numero que desees saber su factorial: "))
         facto = 1
         print(f"El factorial de {numfac}! es:\n")
         for i in range(1, numfac + 1):
