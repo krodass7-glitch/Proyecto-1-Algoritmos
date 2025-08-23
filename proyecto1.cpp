@@ -1,3 +1,5 @@
+/*Este programa indica un menu de seleccion donde de depende su seleccion este puede calcular una permutacion
+o bien determinar el subsidio de una familia dependiendo la cantidad de hijos que esta tiene*/  
 #include <iostream>
 #include <cstdlib>
 
@@ -8,6 +10,8 @@ int main ()
 int opcion,numfac,i,e,hijos,edad,subsi,totalarec; 
 unsigned long long facto;
 
+    /*En este apartado hay un switch donde dependiendo la seleccion que escoja este tomara el case con el 
+    numero seleccionado*/
 do
 
     {
@@ -19,6 +23,9 @@ do
     cin>>opcion;
 
     switch (opcion) {
+
+      /*Si escoge el 1 se calculara la permutacion donde con un cliclo for se repetira hasta que el numero 
+      ingresado sea igual y este se multiplicara por si mismo*/
 
     case 1:
         cout<<"Ingresa el numero que desees saber su factorial: \n";
@@ -43,6 +50,10 @@ do
         break;
     case 2:
 
+                
+        /*En la seleccion numero 2 le pedira que ingrese la cantidad de hijos dependiendo la cantidad el ciclo
+        if y else if se ejecutaran donde entre mismos hay otro if donde hace una prueba logica donde dice si la
+        edad del hijo en mayor o igual a 7 y menos o igual a 18 este calculara un porcentaje adicional del subsidio*/
         cout<<"Ingrese la cantidad de hijos que tiene para saber de cuanto es el subsidio\n";
         cin>>hijos;
         i=1;
@@ -114,6 +125,9 @@ do
               }
                 
         break;
+
+        /*En la seccion numero 3 se llamo la libreria cstdlib para poder limpiar la pantalla y el ciclo 
+        while terminara hasta que sea igual o difernte de la opcion elegida*/
     
     case 3:
         cout<<"Saliendo del programa \n";
