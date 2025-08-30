@@ -34,7 +34,7 @@ do
 
         cout<<"El factorial de "<<numfac<<"! es :\n\n";
 
-                for ( i=1 ; i <= numfac; i++)
+                for ( i=0 ; i <= numfac; i++)
                 {
 
                     facto*=i;
